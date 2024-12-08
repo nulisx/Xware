@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Open Aimbot</h1>
+    <h1>Xware</h1>
     <p>
         <!-- GitHub Releases -->
         <a href="https://github.com/ttwizz/Open-Aimbot/releases">
@@ -33,8 +33,8 @@ Welcome to the **pix**! We develop various utilities for Roblox, security system
 
 ___
 
-### Open Aimbot
-Open Aimbot is a **universal** open source framework. It offers a wide selection of extensive functionality, including:
+### Xware
+Xware is a **universal** open source framework. It offers a wide selection of extensive functionality, including:
 - ***Over 80 Features***
 - ***Detection Bypasses***
 - *Alive*, *God*, *Team*, *Friend*, *Follow*, *Verified Badge*, *Wall*, *Water*, *FoV*, *Magnitude*, *Transparency*, *Group*, *Player*, ***Premium*** Checks
@@ -51,6 +51,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/ma
 ```
 
 <p align="center">
-    <img src="https://i.gyazo.com/3c36be2f6dd82c196967d0dcd61145a7.gif" alt="Open Aimbot" />
+    <img src="https://i.gyazo.com/3c36be2f6dd82c196967d0dcd61145a7.gif" alt="Xware" />
     Copyright (c) 2024 ttwiz_z
 </p>
