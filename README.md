@@ -47,7 +47,7 @@ Xware is a **universal** open source framework. It offers a wide selection of ex
 #### Made with love,
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))()
+loadstring(game:HttpGet("https://github.com/nulisx/Xware/raw/refs/heads/master/source.lua", true))()
 ```
 
 <p align="center">
