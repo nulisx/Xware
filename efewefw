@@ -1,4 +1,4 @@
---headless
+-- headless
 game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
 for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
@@ -16,4 +16,4 @@ chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
 
---korblox
+-- korblox
