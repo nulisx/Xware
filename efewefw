@@ -10,11 +10,9 @@ end
 -- korblox
 local ply = game.Players.LocalPlayer
 local chr = ply.Character
-chr.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=902942093"
-chr.RightLowerLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-chr.RightLowerLeg.Transparency = 0
+chr.RightLowerLeg.MeshId = "902942093"
+chr.RightLowerLeg.Transparency = "3"
 chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
 chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-chr.RightUpperLeg.Transparency = 0
-chr.RightFoot.MeshId = "http://www.roblox.com/asset/?id=902942089"
-chr.RightFoot.Transparency = 0
+chr.RightFoot.MeshId = "902942089"
+chr.RightFoot.Transparency = "3"
