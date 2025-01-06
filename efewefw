@@ -1,18 +1,22 @@
--- headless
-game.Players.LocalPlayer.Character.Head.Transparency = 1
-game.Players.LocalPlayer.Character.Head.Transparency = 1
-for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
-if (v:IsA("Decal")) then
-v.Transparency = 1
-end
+local function applyChanges(character)
+    character.Head.Transparency = 1
+    for i, v in pairs(character.Head:GetChildren()) do
+        if v:IsA("Decal") then
+            v.Transparency = 1
+        end
+    end
+    character.RightLowerLeg.MeshId = "902942093"
+    character.RightLowerLeg.Transparency = 1
+    character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+    character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+    character.RightFoot.MeshId = "902942089"
+    character.RightFoot.Transparency = 1
 end
 
---korblox
-local ply = game.Players.LocalPlayer
-local chr = ply.Character
-chr.RightLowerLeg.MeshId = "902942093"
-chr.RightLowerLeg.Transparency = "1"
-chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-chr.RightFoot.MeshId = "902942089"
-chr.RightFoot.Transparency = "1"
+game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
+    applyChanges(character)
+end)
+
+if game.Players.LocalPlayer.Character then
+    applyChanges(game.Players.LocalPlayer.Character)
+end
