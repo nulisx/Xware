@@ -1,4 +1,3 @@
---https://scriptblox.com/script/Universal-Script-Ken-Koblox-and-Headless-respawn-6712
 -- headless
 game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
