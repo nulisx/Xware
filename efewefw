@@ -1,31 +1,19 @@
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
-local HEADLESS_ID = 15093053680
-local KORBLOX_RIGHT_LEG_ID = 139607718
-
-local function applyCustomAppearance()
-    local head = character:FindFirstChild("Head")
-    if head then
-        head:Destroy()
-        local headless = Instance.new("MeshPart")
-        headless.MeshId = "rbxassetid://" .. HEADLESS_ID
-        headless.Name = "Head"
-        headless.CanCollide = false
-        headless.Position = head.Position
-        headless.Parent = character
-    end
-
-    local rightLeg = character:FindFirstChild("RightLowerLeg")
-    if rightLeg then
-        rightLeg:Destroy()
-        local korbloxLeg = Instance.new("MeshPart")
-        korbloxLeg.MeshId = "rbxassetid://" .. KORBLOX_RIGHT_LEG_ID
-        korbloxLeg.Name = "RightLowerLeg"
-        korbloxLeg.CanCollide = false
-        korbloxLeg.Position = rightLeg.Position
-        korbloxLeg.Parent = character
-    end
+--headless
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v.Transparency = 1
+end
 end
 
-applyCustomAppearance()
+local ply = game.Players.LocalPlayer
+local chr = ply.Character
+chr.RightLowerLeg.MeshId = "902942093"
+chr.RightLowerLeg.Transparency = "1"
+chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+chr.RightFoot.MeshId = "902942089"
+chr.RightFoot.Transparency = "1"
+
+--korblox
