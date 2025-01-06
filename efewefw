@@ -1,0 +1,31 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+local HEADLESS_ID = 15093053680
+local KORBLOX_RIGHT_LEG_ID = 139607718
+
+local function applyCustomAppearance()
+    local head = character:FindFirstChild("Head")
+    if head then
+        head:Destroy()
+        local headless = Instance.new("MeshPart")
+        headless.MeshId = "rbxassetid://" .. HEADLESS_ID
+        headless.Name = "Head"
+        headless.CanCollide = false
+        headless.Position = head.Position
+        headless.Parent = character
+    end
+
+    local rightLeg = character:FindFirstChild("RightLowerLeg")
+    if rightLeg then
+        rightLeg:Destroy()
+        local korbloxLeg = Instance.new("MeshPart")
+        korbloxLeg.MeshId = "rbxassetid://" .. KORBLOX_RIGHT_LEG_ID
+        korbloxLeg.Name = "RightLowerLeg"
+        korbloxLeg.CanCollide = false
+        korbloxLeg.Position = rightLeg.Position
+        korbloxLeg.Parent = character
+    end
+end
+
+applyCustomAppearance()
