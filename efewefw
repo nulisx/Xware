@@ -1,16 +1,29 @@
 local function applyChanges(character)
-    character.Head.Transparency = 1
-    for i, v in pairs(character.Head:GetChildren()) do
-        if v:IsA("Decal") then
-            v.Transparency = 1
+    -- Apply head transparency
+    if character:FindFirstChild("Head") then
+        character.Head.Transparency = 1
+        for i, v in pairs(character.Head:GetChildren()) do
+            if v:IsA("Decal") then
+                v.Transparency = 1
+            end
         end
     end
-    character.RightLowerLeg.MeshId = "902942093"
-    character.RightLowerLeg.Transparency = 1
-    character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-    character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-    character.RightFoot.MeshId = "902942089"
-    character.RightFoot.Transparency = 1
+
+    -- Apply leg and foot changes
+    if character:FindFirstChild("RightLowerLeg") then
+        character.RightLowerLeg.MeshId = "902942093"
+        character.RightLowerLeg.Transparency = 1
+    end
+
+    if character:FindFirstChild("RightUpperLeg") then
+        character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+    end
+
+    if character:FindFirstChild("RightFoot") then
+        character.RightFoot.MeshId = "902942089"
+        character.RightFoot.Transparency = 1
+    end
 end
 
 game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
@@ -18,9 +31,11 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
     character:WaitForChild("RightLowerLeg")
     character:WaitForChild("RightUpperLeg")
     character:WaitForChild("RightFoot")
+    wait(1)  -- Small delay to ensure parts are fully loaded
     applyChanges(character)
 end)
 
+-- Apply changes if the character already exists
 if game.Players.LocalPlayer.Character then
     applyChanges(game.Players.LocalPlayer.Character)
 end
