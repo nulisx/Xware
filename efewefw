@@ -14,6 +14,10 @@ local function applyChanges(character)
 end
 
 game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
+    character:WaitForChild("Head")
+    character:WaitForChild("RightLowerLeg")
+    character:WaitForChild("RightUpperLeg")
+    character:WaitForChild("RightFoot")
     applyChanges(character)
 end)
 
