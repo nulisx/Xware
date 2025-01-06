@@ -10,17 +10,11 @@ end
 -- korblox
 local ply = game.Players.LocalPlayer
 local chr = ply.Character
-
--- Set the Right Lower Leg to Korblox Mesh
 chr.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=902942093"
 chr.RightLowerLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-chr.RightLowerLeg.Transparency = 0 -- Ensure it's visible
-
--- Set the Right Upper Leg to Korblox Mesh
+chr.RightLowerLeg.Transparency = 0
 chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
 chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-chr.RightUpperLeg.Transparency = 0 -- Ensure it's visible
-
--- Set the Right Foot to Korblox Mesh
+chr.RightUpperLeg.Transparency = 0
 chr.RightFoot.MeshId = "http://www.roblox.com/asset/?id=902942089"
-chr.RightFoot.Transparency = 0 -- Ensure it's visible
+chr.RightFoot.Transparency = 0
