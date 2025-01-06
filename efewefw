@@ -10,23 +10,17 @@ end
 -- korblox
 local ply = game.Players.LocalPlayer
 local chr = ply.Character
-chr.RightLowerLeg.MeshId = "902942093"
-chr.RightLowerLeg.Transparency = "1"
+
+-- Set the Right Lower Leg to Korblox Mesh
+chr.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=902942093"
+chr.RightLowerLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+chr.RightLowerLeg.Transparency = 0 -- Ensure it's visible
+
+-- Set the Right Upper Leg to Korblox Mesh
 chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
 chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-chr.RightFoot.MeshId = "902942089"
-chr.RightFoot.Transparency = "1"
-OneLeg.Name = "One Leg"
-OneLeg.Parent = main
-OneLeg.BackgroundColor3 = Color3.new(0.333333, 1, 0)
-OneLeg.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
-OneLeg.Size = UDim2.new(0, 110, 0, 50)
-OneLeg.Font = Enum.Font.GothamBold
-OneLeg.Text = "One Leg"
-OneLeg.TextColor3 = Color3.new(0, 0, 0)
-OneLeg.TextScaled = true
-OneLeg.TextSize = 14
-OneLeg.TextWrapped = true
-OneLeg.MouseButton1Down:connect(function()
-game.Players.LocalPlayer.Character['Right Leg']:remove()
-end)
+chr.RightUpperLeg.Transparency = 0 -- Ensure it's visible
+
+-- Set the Right Foot to Korblox Mesh
+chr.RightFoot.MeshId = "http://www.roblox.com/asset/?id=902942089"
+chr.RightFoot.Transparency = 0 -- Ensure it's visible
